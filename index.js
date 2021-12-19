@@ -1,4 +1,27 @@
-alert('Hello, world');
+// Variables - gives a way to store a value: (name, age or whatever) and use that value whenever you want
+let = age = 25; // age - variable 
+let = year = 2019; // year - variable
+console.log(age, year);
+// Let - value can be changed 
+age = 30;
+console.log(age)
+
+const points = 100; // Const - value of this variable going to stay the same throughout the whole program
+// points = 50; //Uncaught TypeError: Assignment to constant variable. at index.js:10
+console.log(points);
+
+var score = 75; // Var old way to use variables 
+console.log(score);
+// Variables cant have any spaces, usecamo case(myNameIs)
+// Variables can contain only letters, numbers, underscores or dollar signs but they can't start with a number
+// but it can start with any of those other things
+// Reserved keywords can't be used like: let/const
+// Making meangful name, helps to better understand the code for yourself/others
+// /* */ multi-line comments
+ 
+
+
+
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
 //                Function is a block of code to do something that can be invoked and run at any point in code
 // // Object - Arrays, Object Literals, Functions, Dates etc
@@ -32,8 +55,8 @@ alert('Hello, world');
 // }
 // const a = calcArea(5); // stored value that got back (a=area)
 // console.log(a);
-                        // arrow function
-const calcArea = radius => 3.14 * radius**2; // this only works when there is only sinlg return line, even if {} and return is removed it still returns the value
+//                         arrow function
+// const calcArea = radius => 3.14 * radius**2; // this only works when there is only sinlg return line, even if {} and return is removed it still returns the value
 // { // when having only 1 parameter () can be taken away, likewise if there is no parameter () are needed
 //     return 3.14 * radius**2 
 // }; //arrow function version of regular function / just a newer and shorter way to write functions
@@ -42,7 +65,7 @@ const calcArea = radius => 3.14 * radius**2; // this only works when there is on
 // console.log(`area is:`, area);
 
 
-                    // practise arrow functions
+//                     practise arrow functions
 // // const greet = function(){
 // //     return 'hello, world'
 // // };
@@ -104,15 +127,15 @@ const calcArea = radius => 3.14 * radius**2; // this only works when there is on
 // // });
 
 //         get a reference to the 'ul'
-const ul = document.querySelector('.people');
+// const ul = document.querySelector('.people');
 
-const people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li']; //array of different people
+// const people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li']; //array of different people
 
-let html = ``;
-people.forEach(person => {
-    // create html template for each person
-    html += `<li style="color: purple">${person}</li>`;
-});
+// let html = ``;
+// people.forEach(person => {
+//     // create html template for each person
+//     html += `<li style="color: purple">${person}</li>`;
+// });
 
-console.log(html);
-ul.innerHTML = html;
+// console.log(html);
+// ul.innerHTML = html;
