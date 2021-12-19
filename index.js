@@ -22,3 +22,20 @@
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // argument ()
 // greet("Kentucky ", "Ubguva ", "42 ", "Kentuccky ", "How was your journey?"); // argument ()
 // // order of arguments must match the parameters (line 17 to line 20, firt name, then time)
+
+//                            // returning values from functions
+// const calcArea = function(radius){
+//     return 3.14 * radius**2; // returned directly instea of (let area = 3.14 * radius**2)
+//     // return area;
+// }
+// const a = calcArea(5); // stored value that got back (a=area)
+// console.log(a);
+                        // arrow function
+const calcArea = radius => 3.14 * radius**2; // this only works when there is only sinlg return line, even if {} and return is removed it still returns the value
+// { // when having only 1 parameter () can be taken away, likewise if there is no parameter () are needed
+//     return 3.14 * radius**2 
+// }; //arrow function version of regular function / just a newer and shorter way to write functions
+
+const area = calcArea(5);
+console.log(`area is:`, area);
+ 
