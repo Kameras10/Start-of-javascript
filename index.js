@@ -91,13 +91,27 @@ const calcArea = radius => 3.14 * radius**2; // this only works when there is on
 //     //do something
 //     console.log(value);
 // });
-let people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li'];
+// let people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li'];
 
-const logPerson = (person, index) => {
-    console.log(`${index} - Hello ${person}`);
-};
+// const logPerson = (person, index) => {
+//     console.log(`${index} - Hello ${person}`);
+// };
 
-people.forEach(logPerson);
-// people.forEach((person, index) => {
-//     console.log(index, person);
-// });
+// people.forEach(logPerson);
+// // people.forEach((person, index) => {
+// //     console.log(index, person);
+// // });
+
+//         get a reference to the 'ul'
+const ul = document.querySelector('.people');
+
+const people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li']; //array of different people
+
+let html = ``;
+people.forEach(person => {
+    // create html template for each person
+    html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
