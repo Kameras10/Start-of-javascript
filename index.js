@@ -1,4 +1,5 @@
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
+//                Function is a block of code to do something that can be invoked and run at any point in code
 // // Object - Arrays, Object Literals, Functions, Dates etc
 // // Function does particular thing 
 // // Defining the code inside the function once but can rut it as many times as you want
@@ -57,12 +58,22 @@ const calcArea = radius => 3.14 * radius**2; // this only works when there is on
 //     }
 //     return total;
 // }
-const bill = (products, tax) => {
-let total = 0;
-for(let i = 0; i < products.length; i++){
-    total += products[i] + products[i] * tax;
-}
-return total;
-};
+// const bill = (products, tax) => {
+// let total = 0;
+// for(let i = 0; i < products.length; i++){
+//     total += products[i] + products[i] * tax;
+// }
+// return total;
+// };
 
-console.log(bill([10,15,30], 0.2))
+// console.log(bill([10,15,30], 0.2))
+// Method is pretty similar to a function, difference is the way that it is invoked and where it is defined
+
+const name = 'Shaun';
+// function
+const greet = () => 'hello';
+let resultOne = greet();
+console.log(resultOne);
+// method (methods are functions that are associated with an object or data type like string)
+let resultTwo = name.toUpperCase()
+console.log(resultTwo)
