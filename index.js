@@ -1,3 +1,4 @@
+alert('Hello, world');
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
 //                Function is a block of code to do something that can be invoked and run at any point in code
 // // Object - Arrays, Object Literals, Functions, Dates etc
