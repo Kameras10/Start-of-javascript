@@ -69,11 +69,35 @@ const calcArea = radius => 3.14 * radius**2; // this only works when there is on
 // console.log(bill([10,15,30], 0.2))
 // Method is pretty similar to a function, difference is the way that it is invoked and where it is defined
 
-const name = 'Shaun';
-// function
-const greet = () => 'hello';
-let resultOne = greet();
-console.log(resultOne);
-// method (methods are functions that are associated with an object or data type like string)
-let resultTwo = name.toUpperCase()
-console.log(resultTwo)
+// const name = 'Shaun';
+// // function
+// const greet = () => 'hello';
+// let resultOne = greet();
+// console.log(resultOne);
+// // method (methods are functions that are associated with an object or data type like string)
+// let resultTwo = name.toUpperCase()
+// console.log(resultTwo)
+
+//            callbacks & foreach
+
+// const myFunc = (callbackFunc) => {
+//     //do something
+//     let value =50;
+//     callbackFunc(value);
+// };
+
+// // myFunc(function(value){
+// myFunc(value => {
+//     //do something
+//     console.log(value);
+// });
+let people = ['Mario', 'Luigi', 'Ryu', 'Shaun', 'Chun-Li'];
+
+const logPerson = (person, index) => {
+    console.log(`${index} - Hello ${person}`);
+};
+
+people.forEach(logPerson);
+// people.forEach((person, index) => {
+//     console.log(index, person);
+// });
