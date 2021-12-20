@@ -97,6 +97,56 @@
 // let result = 'the blog has ' + likes + ' likes'; //string
 // console.log(result);
 
+//        template strings
+// const title = 'Big ben 2021';
+// const author = 'Harry potah';
+// const likes = 2000;
+// // another name for template strings is template literal
+// //         concatenation way
+// // let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes ';
+// // console.log(result);
+// //         template string way
+// let result = `The blog called ${title} by ${author} has ${likes} likes`; // looks better and quicker // `` - used for template string, (`` - below esc)
+// console.log(result);
+
+// //         creating html templates
+// let html = `
+// <h2>${title}</2h2>
+// <p>By ${author}</p>
+// <span> This blog has ${likes} likes</span>
+// `;
+// console.log(html);
+
+// Arrays type under the object data type, usually used to store collection of things in like collection of strings or numbers
+
+let ninjas = ['Shaun', 'Ryu', 'Chun-Li'];// Array with 3 elements/values inside it // [] - array syntax
+
+// ninjas[1] = 'Ken';
+// console.log(ninjas[1]); // get Shaun if [2] used inside would get Chun-Li and if there is no [] get all 3
+
+// let ages = [20,25,30,35];
+// console.log(ages[2]);
+// let random = ['Shaun', 'crystal', 30, 20]; // not limited to storing one thing
+// console.log(random[1]);
+
+// Arrays like strings like number have properties and methods
+
+// console.log(ninjas.length); // outputs 3 because it counts how many elements inside that array (['Shaun', 'Ryu', ' Chun-Li'])
+
+// array methods
+
+// let result = ninjas.join('-'); // takes array ninjas in this case and it joins all the elements inside with a (-) in this case
+// let result = ninjas.indexOf('Chun-Li'); // 2
+// let result = ninjas.concat(['ken', 'crystal']); // concat  joining things together like 2 arrays // ['Shaun', 'Ryu', 'Chun-Li', 'ken', 'crystal']
+let result = ninjas.push('ken'); // returns the lenght of the new array // So 4 with ken added
+result = ninjas.pop(); // destructive method // this method return the value it popped of array
+// some methods dont alter the orginal value and some do / ninjas.push alters the orignal value and for that reason its called destructive method
+console.log(ninjas); // ['Shaun', 'Ryu', 'Chun-Li', 'ken'] with push method
+console.log(result); // result ken with pop method
+
+
+
+
 
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
 //                Function is a block of code to do something that can be invoked and run at any point in code
