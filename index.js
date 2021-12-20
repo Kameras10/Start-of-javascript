@@ -31,26 +31,72 @@
 
 //            Strings - used to store letter, numbers or other charachters
 // strings are serias of letters, numbers and characters in qoutes, they have properties and they also have methods that built in snippets in code
-console.log('Hello, world');
+// console.log('Hello, world');
 
-let email = "thom@hasdhsah.co.uk";
-console.log(email);
-//           string concatenation - joining strings together
-let firstName = 'Thomas';
-let lastName = 'Bubber';
-let fullName = firstName + ' ' + lastName; // '' added so there is a space between firstName and lastName // 3 things concatenated in there
-console.log(fullName);
-//            getting characters
-console.log(fullName[0]); // T  letter from  firstName Thomas is 0, 2 is o
-//            string length
-console.log(fullName.length); // gets full length of that string
-//            string methods - pretty much a function associated with a particular object or data type
-console.log(fullName.toUpperCase()); // add () at the end
-let result = fullName.toLowerCase(); 
-console.log(result, fullName);
-// Some methods alter the original value and some don't
-let index = email.indexOf('@'); // @ is a an argument / when value is passed into the method 
-console.log(index);
+// let email = "thom@hasdhsah.co.uk";
+// console.log(email);
+// //           string concatenation - joining strings together
+// let firstName = 'Thomas';
+// let lastName = 'Bubber';
+// let fullName = firstName + ' ' + lastName; // '' added so there is a space between firstName and lastName // 3 things concatenated in there
+// console.log(fullName);
+// //            getting characters
+// console.log(fullName[0]); // T  letter from  firstName Thomas is 0, 2 is o
+// //            string length
+// console.log(fullName.length); // gets full length of that string
+// //            string methods - pretty much a function associated with a particular object or data type
+// console.log(fullName.toUpperCase()); // add () at the end
+// let result = fullName.toLowerCase(); 
+// console.log(result, fullName);
+// // Some methods alter the original value and some don't
+// let index = email.indexOf('@'); // @ is a an argument / when value is passed into the method 
+// console.log(index);
+//             Common string methods
+// let email = "apple@gmail.com";
+
+// // let result = email.lastIndexOf('@'); // =5 / lastIndexOf () finds the last character in that particual string
+// // let result = email.slice(0,10); // slices that section from 0 to position 10 (apple@gmai) / first argument where we go from so 0 and the second where to so 10
+// // let result = email.substr(4,10); // Simmilar to slice but instead of cutting it at the 10 characters it goes 10 instead (e@gmail.co)
+// // let result = email.replace('a', 'g'); // replaces the letter (a) with (g)
+// let result = email.replace('p','g'); // only replaces the first p it comes up to and does not change the others
+// console.log(result);
+
+//                Numbers
+// let radius = 10;
+// const pi = 3.14;
+
+// console.log(radius, pi);
+// math operators +, -, *, /, **, %
+
+// console.log(10 / 2);
+// let result = radius % 3;
+// let result = pi * radius**2; //formula for working area of a circle
+
+//order of operation - B I D M A S
+
+// let result = 5 * (10-3)**2;
+// console.log(result);
+
+// let likes = 10;
+
+// // likes = likes +1;
+// // likes++; // short hand operation ++ same as adding 1 like above
+// // likes--; 
+
+// // likes += 10; // adds 10, same can be done for - and etc
+// // likes -= 5;
+// // likes *= 2;
+// // likes /= 2;
+// //Short hand notations, quicker way when doing little calculations
+// // console.log(likes);
+
+// //NaN - not a number
+
+// // console.log( 5 / 'hello '); - get NaN
+
+// let result = 'the blog has ' + likes + ' likes'; //string
+// console.log(result);
+
 
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
 //                Function is a block of code to do something that can be invoked and run at any point in code
