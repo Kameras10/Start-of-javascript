@@ -1,26 +1,56 @@
 // Variables - gives a way to store a value: (name, age or whatever) and use that value whenever you want
-let = age = 25; // age - variable 
-let = year = 2019; // year - variable
-console.log(age, year);
-// Let - value can be changed 
-age = 30;
-console.log(age)
+// let = age = 25; // age - variable 
+// let = year = 2019; // year - variable
+// console.log(age, year);
+// // Let - value can be changed 
+// age = 30;
+// console.log(age)
 
-const points = 100; // Const - value of this variable going to stay the same throughout the whole program
-// points = 50; //Uncaught TypeError: Assignment to constant variable. at index.js:10
-console.log(points);
+// const points = 100; // Const - value of this variable going to stay the same throughout the whole program
+// // points = 50; //Uncaught TypeError: Assignment to constant variable. at index.js:10
+// console.log(points);
 
-var score = 75; // Var old way to use variables 
-console.log(score);
+// var score = 75; // Var old way to use variables 
+// console.log(score);
 // Variables cant have any spaces, usecamo case(myNameIs)
 // Variables can contain only letters, numbers, underscores or dollar signs but they can't start with a number
 // but it can start with any of those other things
 // Reserved keywords can't be used like: let/const
 // Making meangful name, helps to better understand the code for yourself/others
 // /* */ multi-line comments
- 
+// Javascript is 0 based language it counts from 0 up and not from 1
 
+//             JavaScript Data Types
+// Numbers: 1, 2 3, 100, 3.14
+// String 'hello, world' "shuma@shamuna.co.uk
+// Boolean - true / false, used for evaluating conditions
+// Null - Explicitly set a variable with no value 
+// Undefined for variables that have not yet been defined, automatically given
+// Object Complex date structures - Arrays, Dates, Literals etc
+// Symbol - Used with objects
 
+//            Strings - used to store letter, numbers or other charachters
+// strings are serias of letters, numbers and characters in qoutes, they have properties and they also have methods that built in snippets in code
+console.log('Hello, world');
+
+let email = "thom@hasdhsah.co.uk";
+console.log(email);
+//           string concatenation - joining strings together
+let firstName = 'Thomas';
+let lastName = 'Bubber';
+let fullName = firstName + ' ' + lastName; // '' added so there is a space between firstName and lastName // 3 things concatenated in there
+console.log(fullName);
+//            getting characters
+console.log(fullName[0]); // T  letter from  firstName Thomas is 0, 2 is o
+//            string length
+console.log(fullName.length); // gets full length of that string
+//            string methods - pretty much a function associated with a particular object or data type
+console.log(fullName.toUpperCase()); // add () at the end
+let result = fullName.toLowerCase(); 
+console.log(result, fullName);
+// Some methods alter the original value and some don't
+let index = email.indexOf('@'); // @ is a an argument / when value is passed into the method 
+console.log(index);
 
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
 //                Function is a block of code to do something that can be invoked and run at any point in code
