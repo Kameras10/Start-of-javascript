@@ -119,31 +119,70 @@
 
 // Arrays type under the object data type, usually used to store collection of things in like collection of strings or numbers
 
-let ninjas = ['Shaun', 'Ryu', 'Chun-Li'];// Array with 3 elements/values inside it // [] - array syntax
+// let ninjas = ['Shaun', 'Ryu', 'Chun-Li'];// Array with 3 elements/values inside it // [] - array syntax
 
-// ninjas[1] = 'Ken';
-// console.log(ninjas[1]); // get Shaun if [2] used inside would get Chun-Li and if there is no [] get all 3
+// // ninjas[1] = 'Ken';
+// // console.log(ninjas[1]); // get Shaun if [2] used inside would get Chun-Li and if there is no [] get all 3
 
-// let ages = [20,25,30,35];
-// console.log(ages[2]);
-// let random = ['Shaun', 'crystal', 30, 20]; // not limited to storing one thing
-// console.log(random[1]);
+// // let ages = [20,25,30,35];
+// // console.log(ages[2]);
+// // let random = ['Shaun', 'crystal', 30, 20]; // not limited to storing one thing
+// // console.log(random[1]);
 
-// Arrays like strings like number have properties and methods
+// // Arrays like strings like number have properties and methods
 
-// console.log(ninjas.length); // outputs 3 because it counts how many elements inside that array (['Shaun', 'Ryu', ' Chun-Li'])
+// // console.log(ninjas.length); // outputs 3 because it counts how many elements inside that array (['Shaun', 'Ryu', ' Chun-Li'])
 
-// array methods
+// // array methods
 
-// let result = ninjas.join('-'); // takes array ninjas in this case and it joins all the elements inside with a (-) in this case
-// let result = ninjas.indexOf('Chun-Li'); // 2
-// let result = ninjas.concat(['ken', 'crystal']); // concat  joining things together like 2 arrays // ['Shaun', 'Ryu', 'Chun-Li', 'ken', 'crystal']
-let result = ninjas.push('ken'); // returns the lenght of the new array // So 4 with ken added
-result = ninjas.pop(); // destructive method // this method return the value it popped of array
-// some methods dont alter the orginal value and some do / ninjas.push alters the orignal value and for that reason its called destructive method
-console.log(ninjas); // ['Shaun', 'Ryu', 'Chun-Li', 'ken'] with push method
-console.log(result); // result ken with pop method
+// // let result = ninjas.join('-'); // takes array ninjas in this case and it joins all the elements inside with a (-) in this case
+// // let result = ninjas.indexOf('Chun-Li'); // 2
+// // let result = ninjas.concat(['ken', 'crystal']); // concat  joining things together like 2 arrays // ['Shaun', 'Ryu', 'Chun-Li', 'ken', 'crystal']
+// let result = ninjas.push('ken'); // returns the lenght of the new array // So 4 with ken added
+// result = ninjas.pop(); // destructive method // this method return the value it popped of array
+// // some methods dont alter the orginal value and some do / ninjas.push alters the orignal value and for that reason its called destructive method
+// console.log(ninjas); // ['Shaun', 'Ryu', 'Chun-Li', 'ken'] with push method
+// console.log(result); // result ken with pop method
 
+//         Null & Undefined
+// let age;
+
+// console.log(age, age + 3, `the age is ${age}`); // undefined NaN 'the age is undefined'
+// let age = null;
+// console.log(age, age + 3, `the age is ${age}`);
+
+//        booleans & comparisons
+// booleans - to evaluate conditions in our code
+// console.log(true, false, "true", "false");
+
+// // methods can return booleans
+// let email = 'marius@gmail.com';
+// let names = ['luigi', 'toad', 'bean'];
+
+// // let result = email.includes('@');
+// // let result = names.includes('tako');
+// // console.log(result);
+
+// //    comparison operators - to compare two things together and they are going to return boolean true or false
+// let age = 25;
+
+// // console.log(age == 25); // == asking are these 2 things the same age = 25? (true)
+// // console.log(age == 30); //(false)
+// // console.log(age != 30); // != - negates this / ask if age is not equal to 30 (true)
+// // console.log(age > 20); // not greater then 20 (true)
+// // console.log(age < 20); // less then 20 (false)
+// // console.log(age <= 25); // less then or equal to 25 (true)
+// // console.log(age >= 20); // greater then or equalto 25 (true)
+
+// // with string
+// let name = 'shaun';
+
+// // == abstract equallity or loose equallity, values type is not considered when comparison is performed
+// console.log(name == 'shaun'); // name = shaun (true)
+// console.log(name == 'Shaun'); // name = shaun (false) capital S (Shaun)
+// console.log(name > 'crystal'); // (true) shaun is greater then crystal because s comes later in the alphabet / so later letters in the alphabet are greater then early ones
+// console.log(name > 'Shaun'); // (true) lower case letter greater then a upper case letter
+// console.log(name > 'Crystal'); // (true) 
 
 
 
