@@ -164,9 +164,8 @@
 // // console.log(result);
 
 // //    comparison operators - to compare two things together and they are going to return boolean true or false
-// let age = 25;
+let age = 25;
 
-// // console.log(age == 25); // == asking are these 2 things the same age = 25? (true)
 // // console.log(age == 30); //(false)
 // // console.log(age != 30); // != - negates this / ask if age is not equal to 30 (true)
 // // console.log(age > 20); // not greater then 20 (true)
@@ -183,6 +182,16 @@
 // console.log(name > 'crystal'); // (true) shaun is greater then crystal because s comes later in the alphabet / so later letters in the alphabet are greater then early ones
 // console.log(name > 'Shaun'); // (true) lower case letter greater then a upper case letter
 // console.log(name > 'Crystal'); // (true) 
+
+// loose comparison (different types can still be equal)
+// console.log(age == 25); // == asking are these 2 things the same age = 25? (true) / loose comparison - different types can still be equal
+// console.log(age == '25'); // (true) age = 25 is still equal to a string 25 / javascript converts that string into a number before it evaluates it
+// // when 2 things are compared to each other using == different types can still be equal because of this type conversion that js does in a background
+// console.log(age != 25);//(false)
+// console.log(age != '25');//(false)
+
+// strict comparison (different types cannot be equal) - instead of using == signs use 3 and instead of (!=) using 1= here use 2
+
 
 
 
