@@ -261,8 +261,68 @@
 // } while(i < 5);
 
 // if statements
+// const age = 25;
+
+// if(age > 20){
+//     console.log('you are over 20 years old');
+// }
+
+// const items = ['table', 'fork', 'oak', 'robe'];
+
+// if(items.length > 3){
+//     console.log("that's a lot of items"); // use "" when there is ' inside (that's)
+// }
+
+// const password = 'pass';
+
+// if(password.length >= 8){
+//     console.log('password is long enough!');
+// }
 
 
+// else if statements
+
+// it can only run either of those and never both of them at the same time
+
+// const password = 'passwor';
+
+// if(password.length >= 12 && password.includes('@')){
+//     console.log('that password is very strong');
+// } else if(password.length >= 8 || password.includes('s') && password.length >= 5 ){ // because of ||(or) only one condition can be met
+//     console.log('password is strong enough!');
+// } else {
+//     console.log('password is not strong enough');
+// }
+// // logical operators - OR - || and AND - &&
+
+//    logical NOT (!) - reverses boolean value 
+
+// let user = false;
+
+// if(!user){
+// console.log('you must be logged in to continue');
+// }
+
+// console.log(!true); // this makes this false
+// console.log(!false);  // makes this true
+
+
+//       break and continue
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+for (let i = 0; i < scores.length; i++){
+
+    if(scores[i] === 0){
+        continue; // to braek out of the current loop and continue with the next iteration
+    }
+
+    console.log('your score: ', scores[i]);
+    if(scores[i] === 100){
+        console.log('congrats, you got the top score!');
+        break; // breaks out of the loop / so its going to ignore last 2elements [20, 10] and carry on with the code
+    }
+}
 
 
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
