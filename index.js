@@ -309,20 +309,77 @@
 
 //       break and continue
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
-for (let i = 0; i < scores.length; i++){
+// for (let i = 0; i < scores.length; i++){
 
-    if(scores[i] === 0){
-        continue; // to braek out of the current loop and continue with the next iteration
-    }
+//     if(scores[i] === 0){
+//         continue; // to braek out of the current loop and continue with the next iteration
+//     }
 
-    console.log('your score: ', scores[i]);
-    if(scores[i] === 100){
-        console.log('congrats, you got the top score!');
-        break; // breaks out of the loop / so its going to ignore last 2elements [20, 10] and carry on with the code
-    }
+//     console.log('your score: ', scores[i]);
+//     if(scores[i] === 100){
+//         console.log('congrats, you got the top score!');
+//         break; // breaks out of the loop / so its going to ignore last 2elements [20, 10] and carry on with the code
+//     }
+// }
+
+
+//    switch statements
+
+// const grade = 50;
+// switch(grade){
+// case 50:
+//     console.log('you got an A!');
+//     break; // Without a break statement it runs every single line after it
+// case 'B':
+//     console.log('you got an B!');
+//     break;
+// case 'C':
+//     console.log('you got an C!');
+//     break;
+// case 'D':
+//     console.log('you got an D!');
+//     break;
+// case 'E':
+//     console.log('you got an E!');
+//     break;
+// default: // runs only when its not covered by any of the cases above
+//     console.log('not a valid grade');
+// }
+
+// this using if statements
+// if(grade === 'A'){
+
+// } else if(grade === 'B'){
+
+// } else if(grade === 'C'){
+
+// } else if(grade === 'D'){
+
+// } else if(grade === 'E');
+
+
+
+//     variables & block scope
+const age = 30; // global scope and be accessed anywhere in the file
+// same with let/const but once const is defined it cant be changed / same rules of scope apply to const as they do to let variables
+// var - old variable ignores block scope
+if(true){
+    const age = 40; // (age = 40) - access global scope(root scope) variable and changes it to 40 (let age = 40) - only changes inside code block because its local scope and it can only accessed inside this code block
+    const name = 'shaun';
+    // code block - sections of code that runs when something is true or conditions is met
+    console.log('inside code block:', age, name); //this is also true for nested code blocks (if)
+if(true){
+    const age = 50; // creates new variable with new local scope inside just this code block
+    // nested code block - code block inside another code block
+    console.log('inside nested code block:', age, name); // local scope used so get name and age variable from inside code block 
+    var test = 'hello';
 }
+}
+
+console.log('outside code block:', age, name, test); // don't get name here because it has variable has been set inside code block with local scope // var - its not given block scope, so let/const has advantage
+
 
 
 // greet("Josh ", "Survival ", "22 ", "Michigan ", "How was your journey?"); // example of hoisting
