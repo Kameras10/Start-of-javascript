@@ -164,34 +164,53 @@
 // // console.log(result);
 
 // //    comparison operators - to compare two things together and they are going to return boolean true or false
-let age = 25;
+// let age = 25;
 
-// // console.log(age == 30); //(false)
-// // console.log(age != 30); // != - negates this / ask if age is not equal to 30 (true)
-// // console.log(age > 20); // not greater then 20 (true)
-// // console.log(age < 20); // less then 20 (false)
-// // console.log(age <= 25); // less then or equal to 25 (true)
-// // console.log(age >= 20); // greater then or equalto 25 (true)
+// // // console.log(age == 30); //(false)
+// // // console.log(age != 30); // != - negates this / ask if age is not equal to 30 (true)
+// // // console.log(age > 20); // not greater then 20 (true)
+// // // console.log(age < 20); // less then 20 (false)
+// // // console.log(age <= 25); // less then or equal to 25 (true)
+// // // console.log(age >= 20); // greater then or equalto 25 (true)
 
-// // with string
-// let name = 'shaun';
+// // // with string
+// // let name = 'shaun';
 
-// // == abstract equallity or loose equallity, values type is not considered when comparison is performed
-// console.log(name == 'shaun'); // name = shaun (true)
-// console.log(name == 'Shaun'); // name = shaun (false) capital S (Shaun)
-// console.log(name > 'crystal'); // (true) shaun is greater then crystal because s comes later in the alphabet / so later letters in the alphabet are greater then early ones
-// console.log(name > 'Shaun'); // (true) lower case letter greater then a upper case letter
-// console.log(name > 'Crystal'); // (true) 
+// // // == abstract equallity or loose equallity, values type is not considered when comparison is performed
+// // console.log(name == 'shaun'); // name = shaun (true)
+// // console.log(name == 'Shaun'); // name = shaun (false) capital S (Shaun)
+// // console.log(name > 'crystal'); // (true) shaun is greater then crystal because s comes later in the alphabet / so later letters in the alphabet are greater then early ones
+// // console.log(name > 'Shaun'); // (true) lower case letter greater then a upper case letter
+// // console.log(name > 'Crystal'); // (true) 
 
-// loose comparison (different types can still be equal)
-// console.log(age == 25); // == asking are these 2 things the same age = 25? (true) / loose comparison - different types can still be equal
-// console.log(age == '25'); // (true) age = 25 is still equal to a string 25 / javascript converts that string into a number before it evaluates it
-// // when 2 things are compared to each other using == different types can still be equal because of this type conversion that js does in a background
-// console.log(age != 25);//(false)
-// console.log(age != '25');//(false)
+// // loose comparison (different types can still be equal)
+// // console.log(age == 25); // == asking are these 2 things the same age = 25? (true) / loose comparison - different types can still be equal
+// // console.log(age == '25'); // (true) age = 25 is still equal to a string 25 / javascript converts that string into a number before it evaluates it
+// // // when 2 things are compared to each other using == different types can still be equal because of this type conversion that js does in a background
+// // console.log(age != 25);//(false)
+// // console.log(age != '25');//(false)
 
-// strict comparison (different types cannot be equal) - instead of using == signs use 3 and instead of (!=) using 1= here use 2
+// // strict comparison (different types cannot be equal) - instead of using == signs use 3 and instead of (!=) using 1= here use 2
 
+// console.log(age === 25); //(true) === asking if age is the same type and value as 25
+// console.log(age === '25');//(false) because now its a string and there is no type conversion so a number and a string is compared directly and they are not equal
+// console.log(age !== 25); // (false) its asking if 25 is not equal to 25 and that is false because age is equal to 25
+// console.log(age !== '25'); //(true) because a string is used instead of a number
+
+// type conversion
+let score = '100';
+
+// score = Number(score);// type conversion converting string into a number
+// console.log(score + 1); // if string is not converted into a number it would just add 1 to the end and give 1001 but with string converted you get 101
+// console.log(typeof score); // checking type of
+
+// let result = Number('hello'); // when trying to convert words into numbers you get NaN not a number
+// console.log(result); // NaN
+// let result =String(50);
+// let result = Boolean(100);
+let result = Boolean('0');
+console.log(result, typeof result); // 50 string so its not a number / true "boolean" 0 - falsy value / positive nombers are considered truthy value in type conversion, minus numbers are also truthy
+// but 0 is false / strings of any lenghts are all truthy but an empty string is falsy
 
 
 
