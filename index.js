@@ -198,19 +198,69 @@
 // console.log(age !== '25'); //(true) because a string is used instead of a number
 
 // type conversion
-let score = '100';
+// let score = '100';
 
-// score = Number(score);// type conversion converting string into a number
-// console.log(score + 1); // if string is not converted into a number it would just add 1 to the end and give 1001 but with string converted you get 101
-// console.log(typeof score); // checking type of
+// // score = Number(score);// type conversion converting string into a number
+// // console.log(score + 1); // if string is not converted into a number it would just add 1 to the end and give 1001 but with string converted you get 101
+// // console.log(typeof score); // checking type of
 
-// let result = Number('hello'); // when trying to convert words into numbers you get NaN not a number
-// console.log(result); // NaN
-// let result =String(50);
-// let result = Boolean(100);
-let result = Boolean('0');
-console.log(result, typeof result); // 50 string so its not a number / true "boolean" 0 - falsy value / positive nombers are considered truthy value in type conversion, minus numbers are also truthy
-// but 0 is false / strings of any lenghts are all truthy but an empty string is falsy
+// // let result = Number('hello'); // when trying to convert words into numbers you get NaN not a number
+// // console.log(result); // NaN
+// // let result =String(50);
+// // let result = Boolean(100);
+// let result = Boolean('0');
+// console.log(result, typeof result); // 50 string so its not a number / true "boolean" 0 - falsy value / positive nombers are considered truthy value in type conversion, minus numbers are also truthy
+// // but 0 is false / strings of any lenghts are all truthy but an empty string is falsy
+
+
+//           Control Flow 
+// Use loops for cycling through data
+// Use conditional statments for checking conditions
+
+//for loops
+// don't add ; at the end for loops
+// inside () 3different things, first an initialization variable and this variable is like a counter it keeps count how many times we cycle through the loop and how many times code is runned
+// second thing is condition and its going to evaluate to either true or false, if condition is true its going to execute the code that is inside the code block and if its false its not going to do that
+// third thing is a final expression and its going to execute everytime at the end of a code block
+// for (let i = 0; i < 5; i++){
+//     console.log('in loop:', i);
+// }
+
+// console.log('loop finished');
+
+// const names = ['shaun','mario','luigi']; // each iteration is one cycle through, each time code blocked is performed that is one iteration
+// // names.length used when unknown how many elements are inside there and how many times to cycle through it
+// for(let i = 0; i < names.length; i++){
+//     // console.log(names[i]);
+//     let html = `<div>${names[i]}</div>`;
+//     console.log(html);
+// }
+
+// while loops do exactly the same thing as for loops, both loop through some code a certain amount of times
+// the only difference is syntax of how its written
+// infinity loop when cycle has no end and you are caught in it
+// const names = ['shaun', 'mario', 'luigi'];
+// // let i = 0;
+
+// // while(i < 5){
+// //     console.log('in loop: ', i);
+// //     i++;
+// // }
+// let i = 0;
+// while(i < names.length){
+//     console.log(names[i]);
+//     i++;
+// }
+
+// do while loops - just an extension of while loop
+// executes a block of code inside of loop first regardless whatever condition is true or false 
+// let i = 5;
+// do{
+//     console.log('val of i is: ', i);
+//     i++;
+// } while(i < 5);
+
+// if statements
 
 
 
