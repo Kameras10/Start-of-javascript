@@ -514,14 +514,28 @@ age: 30, // , only when there is another key value after it
 email: 'crystal@gmail.com',
 location: 'Ukrain',
 blogs: ['why i like pasta', '10 things to make with air'],
-login: function(){
+login(){
     console.log('the user logged in');
 },
-logout: function(){
+logout(){
     console.log('the user logged out');
+},
+logBlogs(){
+// console.log(blogs); //does not work 
+// this.blogs; // context object
+// console.log(this.blogs);
+console.log('this user has written the following blogs:')
+this.blogs.forEach(blog => {
+    console.log(blog);
+})
+// console.log(this); // this now is the window object
 }
 
 }; // this way is only for readability and can be placed in one line (let user = {name: 'crystal', age: 30, email: 'crystal@gmail.com', location: 'Ukrain', blogs: ['why i like pasta', '10 things to make with air']})
+
+user.logBlogs();
+console.log(this); // global context (window object)
+
 // console.log(user);
 // console.log(user.name); // to get one value 
 
@@ -538,8 +552,8 @@ logout: function(){
 
 // console.log(typeof user); // object
 
-user.login();
-user.logout();
+// user.login();
+// user.logout();
 
-const name = 'mario';
-name.toUpperCase();
+// const name = 'mario';
+// name.toUpperCase();
