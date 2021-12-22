@@ -361,24 +361,24 @@
 
 
 
-//     variables & block scope
-const age = 30; // global scope and be accessed anywhere in the file
-// same with let/const but once const is defined it cant be changed / same rules of scope apply to const as they do to let variables
-// var - old variable ignores block scope
-if(true){
-    const age = 40; // (age = 40) - access global scope(root scope) variable and changes it to 40 (let age = 40) - only changes inside code block because its local scope and it can only accessed inside this code block
-    const name = 'shaun';
-    // code block - sections of code that runs when something is true or conditions is met
-    console.log('inside code block:', age, name); //this is also true for nested code blocks (if)
-if(true){
-    const age = 50; // creates new variable with new local scope inside just this code block
-    // nested code block - code block inside another code block
-    console.log('inside nested code block:', age, name); // local scope used so get name and age variable from inside code block 
-    var test = 'hello';
-}
-}
+// //     variables & block scope
+// const age = 30; // global scope and be accessed anywhere in the file
+// // same with let/const but once const is defined it cant be changed / same rules of scope apply to const as they do to let variables
+// // var - old variable ignores block scope
+// if(true){
+//     const age = 40; // (age = 40) - access global scope(root scope) variable and changes it to 40 (let age = 40) - only changes inside code block because its local scope and it can only accessed inside this code block
+//     const name = 'shaun';
+//     // code block - sections of code that runs when something is true or conditions is met
+//     console.log('inside code block:', age, name); //this is also true for nested code blocks (if)
+// if(true){
+//     const age = 50; // creates new variable with new local scope inside just this code block
+//     // nested code block - code block inside another code block
+//     console.log('inside nested code block:', age, name); // local scope used so get name and age variable from inside code block 
+//     var test = 'hello';
+// }
+// }
 
-console.log('outside code block:', age, name, test); // don't get name here because it has variable has been set inside code block with local scope // var - its not given block scope, so let/const has advantage
+// console.log('outside code block:', age, name, test); // don't get name here because it has variable has been set inside code block with local scope // var - its not given block scope, so let/const has advantage
 
 
 
@@ -394,7 +394,8 @@ console.log('outside code block:', age, name, test); // don't get name here beca
 // // Does not impose good coding practise when you are declaring things (best to first declare function and then use it)
 // // can end up with mashup of functions and calls all over the place
 
-//            // function declaration (no variable)
+//            // function declaration (no variable) - one of the main building blocks in the most programing languages / functions fall under object data type category
+// Function - allows to define a block of code which we can call and use whenever needed
 // function greet(name, lastName, age, city, question){ // paremeters()
 //     console.log("Hello " + name + lastName + age + city + question); // parameters()
 // }
@@ -499,3 +500,46 @@ console.log('outside code block:', age, name, test); // don't get name here beca
 
 // console.log(html);
 // ul.innerHTML = html;
+
+
+//            Object in JavaScript have properties & things they can do (methods)
+// examples user object - properties(email, username, gender) / methods (login, logout)
+// blog object - properties(title, author, content) / methods (publish, unpublish, delete)
+
+// object literals
+
+let user = {
+name: 'crystal', //(name) - key (crystal) - value // this makes one property of this user object
+age: 30, // , only when there is another key value after it
+email: 'crystal@gmail.com',
+location: 'Ukrain',
+blogs: ['why i like pasta', '10 things to make with air'],
+login: function(){
+    console.log('the user logged in');
+},
+logout: function(){
+    console.log('the user logged out');
+}
+
+}; // this way is only for readability and can be placed in one line (let user = {name: 'crystal', age: 30, email: 'crystal@gmail.com', location: 'Ukrain', blogs: ['why i like pasta', '10 things to make with air']})
+// console.log(user);
+// console.log(user.name); // to get one value 
+
+// user.age = 35; // overwrite one value
+// console.log(user.age);//35 not 30
+
+// const key = 'location';
+// user.key // cant be used
+// console.log(user[key]); // same as saying user['location']
+
+// console.log(user['email']); // this way can be useful when passing some kind of variable
+// user['name'] = 'Kate'; // change the value
+// console.log(user['name']);
+
+// console.log(typeof user); // object
+
+user.login();
+user.logout();
+
+const name = 'mario';
+name.toUpperCase();
